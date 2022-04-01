@@ -1,0 +1,44 @@
+html{
+    box-sizing: border-box;
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding:0 80px ;
+}
+
+// Header styles
+.header{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    &__logo{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    &__nav{
+        display: flex;
+        margin-left: auto;
+    }
+
+    .nav{
+        list-style: none;
+        
+        &__item{
+            display: flex;
+            margin: 0 10px;
+        }
+        &__link{
+            text-decoration: none;
+            color: red;
+        }
+    }
+}
